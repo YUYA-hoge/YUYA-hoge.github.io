@@ -23,3 +23,9 @@ DNSの設定はGitHub Pagesの案内に従い、確認後にHTTPSを有効にし
 
 Itsu / OkiのREADMEと実際のプロダクト画像を参照。Okiは開発中として紹介しています。
 職歴、連絡先、App StoreのURLは未確認のため掲載していません。
+
+## デザイン
+
+明るいモノトーンと大きな文字を基調に、「暮らしの、前と先。」という構成でItsuとOkiを紹介します。画像の外にテキストリンクを置いた、横並びの作品紹介です。スマートフォンでは縦に並びます。
+
+矢印アイコンはBootstrap Icons（MIT、dist/assets/bootstrap-icons-LICENSE.txt）を使用しています。
