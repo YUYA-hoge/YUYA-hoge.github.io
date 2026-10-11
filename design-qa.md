@@ -43,3 +43,17 @@ Earlier P2 findings fixed: header/name scale and hero spacing now align with the
 - Browser verification covered the Codex in-app Chromium browser; other browser engines and physical devices were not tested.
 
 final result: passed
+
+## User annotation update — 2026-10-11
+
+Intentional changes requested by the user override the original mock: reduce the name heading, translate About title to Japanese, add the supplied career and X profile.
+- Name size reduced by about 20%: 206px to 164px maximum; at the annotated 647px viewport, 86.7px to 69.2px.
+- Japanese title: 小さな問いから、役に立つものを。 Japanese font, size and line-height adjusted for two readable lines.
+- Career displays only supplied information: 製造業 / DX推進. No year, company or duties inferred.
+- X link uses https://x.com/yuya_developer and opens in a new tab with noopener/noreferrer.
+- Existing monochrome tokens, supplied images, product layout and detail controls preserved.
+- Browser-rendered evidence: profile-edit-647.jpg, profile-edit-desktop.jpg, profile-about.jpg under /Users/yuya0205/develop/yuyahirata/design-references/.
+- Checked 647 × 740, 375 × 812 and 1440 × 1000 CSS viewports. No horizontal overflow; About copy, career and social links fit. Browser console errors: none.
+- No new actionable P0/P1/P2 findings.
+
+final result: passed

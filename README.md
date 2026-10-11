@@ -22,7 +22,7 @@ DNSの設定はGitHub Pagesの案内に従い、確認後にHTTPSを有効にし
 ## コンテンツ
 
 Itsu / OkiのREADMEと実際のプロダクト画像を参照。Okiは開発中として紹介しています。
-職歴、連絡先、App StoreのURLは未確認のため掲載していません。
+経歴はユーザー提供の「製造業 / DX推進」を掲載。Xは https://x.com/yuya_developer 。連絡先、App StoreのURLは未確認のため掲載していません。
 
 ## デザイン
 
