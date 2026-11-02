@@ -19,7 +19,7 @@
   "skillIosTitle": "iOSアプリ開発",
   "skillIos": "Swift / SwiftUI / SwiftData",
   "skillDataTitle": "データ・AI",
-  "skillData": "Python / BigQuery / Google ADK / Streamlit",
+  "skillData": "Python / BigQuery / Claude Code / Codex",
   "skillWebTitle": "Web開発",
   "skillWeb": "HTML / CSS / JavaScript / Express / PostgreSQL"
 }
