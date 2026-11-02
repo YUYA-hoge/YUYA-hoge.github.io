@@ -1,29 +1,20 @@
-# Portfolio rebuild — 2026-10-11
+# Release review — avatar, skills and Pages CMS
 
-Status: passed. No unresolved P0/P1/P2 issues in the checked views.
+final result: passed
 
-User brief: improve overall finish and consistency; retain a quiet light design with an original structure. Smaller name, Japanese headings, career “製造業 / DX推進”, GitHub and X.
+Visual truth: previously approved white/Gothic design (`../design/motion-preview/white-desktop.jpg`) and user-supplied seal avatar. Requested additions: profile icon, skills, CMS integration and GitHub Pages publication.
+Implementation evidence: `../design/publish-desktop.jpg` (1280px CSS width), `../design/publish-mobile.jpg` (390×844 CSS viewport), and `../design/publish-comparison.jpg` (combined before/after, proportionally scaled). Source desktop was 1440px wide; full-page heights intentionally differ because skills and avatar were added. Native screenshot density 1. This is a scoped before/after comparison, not an exact-pixel recreation.
 
-## Visual review
+- Fonts: existing system Gothic hierarchy retained; headings bold, body readable. No invented slogan reintroduced.
+- Layout: avatar is 144px desktop/82px mobile, rounded without distortion. Skills align with section content and collapse to labeled vertical rows on mobile. All sections and navigation align with the existing visual system.
+- Colors: white background and neutral ink retained. Only the owner-supplied avatar introduces cyan.
+- Images: supplied avatar and current App Store icons load, preserve aspect ratios and have appropriate alternative text or decorative treatment.
+- Content: iOS skills grounded in the owner's app code; Python/BigQuery/ADK/Streamlit and web technologies grounded in public repositories. No expertise rating or years invented.
+- Focused review: full-size desktop and mobile screenshots were inspected for avatar cropping, skill wrapping, text weight and app-link readability; no additional cropped comparison was needed for these sparse sections.
+- Browser checks: all images loaded; 390px viewport scrollWidth equals innerWidth; section navigation works; browser error/warning logs empty. Reveal and reduced-motion behavior retained.
 
-Revised source: `/Users/yuya0205/.codex/generated_images/01a12672-a4b9-7880-ba47-c6ea3d1713c1/exec-1cf1d884-6972-42d4-a79b-a29efae9151c.png`.
-Rendered desktop: `/Users/yuya0205/develop/yuyahirata/design-references/rebuild-desktop.jpg`.
-Side-by-side: `/Users/yuya0205/develop/yuyahirata/design-references/rebuild-comparison.jpg`.
-Mobile: `/Users/yuya0205/develop/yuyahirata/design-references/rebuild-mobile.jpg`.
+CMS verification: root .pages.yml parses successfully using Ruby YAML. Every configured field maps exactly to dist/content.json. All 23 text fields are rendered to HTML by scripts/render_content.py. Isolated checks verify HTML escaping and non-empty-field validation. JavaScript syntax and git whitespace checks passed. The deploy workflow renders CMS content before artifact upload, so a CMS save to main triggers the normal deployment.
 
-- Layout: two equal project columns, identical stage aspect ratios, matching device scale and aligned description/footer sections. Mobile uses one column.
-- Typography: reduced name size, Japanese section headings, consistent title/body/link scale. Name intentionally smaller than revised image to respect the user's annotation.
-- Color: warm white canvas, dark text, restrained cool/warm product stages, hairline separators.
-- Imagery: locally bundled matching device illustrations; product dialogs retain original supplied product images. Illustrated device images are labeled as device images rather than exact screenshots.
-- Content: same concise introduction pattern for both apps; Oki visibly in development; profile integrates only supplied career and social links. No invented employment dates or company.
+CMS account activation is a separate, incomplete external step: hosted app opens the sign-in page. Sign-in explicitly accepts Terms of Service, and GitHub App authorization may grant repository write access. No agreement or new app permission was accepted by the agent. Repository configuration is complete; owner must finish first sign-in/authorization.
 
-## Functional verification
-
-- Viewports 1440×1600, 647×740, 375×812 checked in browser; no horizontal overflow at either narrow viewport.
-- All image assets loaded at 375px.
-- Both detail dialogs open with correct content. Itsu support visible only for Itsu.
-- Escape and close button dismiss dialogs; native modal semantics and trigger focus restoration retained.
-- GitHub and X URLs checked against requested destinations in rendered DOM.
-- Browser error/warning logs empty.
-- JavaScript syntax check and git diff whitespace check passed.
-- Skip link changed to clipped hidden state to remove screenshot edge artifact while retaining keyboard access.
+No actionable P0/P1/P2 visual findings. Post-deployment URL verification follows this release commit.

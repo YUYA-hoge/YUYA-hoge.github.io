@@ -1,0 +1,76 @@
+content:
+  - name: homepage
+    label: ホームページの文章
+    type: file
+    path: dist/content.json
+    format: json
+    fields:
+      - name: name
+        label: 名前
+        type: string
+      - name: role
+        label: 肩書き・活動
+        type: string
+      - name: about
+        label: 自己紹介
+        type: text
+      - name: industry
+        label: 業界
+        type: string
+      - name: career
+        label: 経歴・役割
+        type: string
+      - name: tabeName
+        label: Tabe：アプリ名
+        type: string
+      - name: tabeDescription
+        label: Tabe：紹介文
+        type: text
+      - name: okiName
+        label: Oki：アプリ名
+        type: string
+      - name: okiDescription
+        label: Oki：紹介文
+        type: text
+      - name: itsuName
+        label: Itsu：アプリ名
+        type: string
+      - name: itsuDescription
+        label: Itsu：紹介文
+        type: text
+      - name: aboutTitle
+        label: 自己紹介の見出し
+        type: string
+      - name: skillsTitle
+        label: スキルの見出し
+        type: string
+      - name: appsTitle
+        label: 作品の見出し
+        type: string
+      - name: appsIntro
+        label: 作品の補足文
+        type: string
+      - name: careerTitle
+        label: 経歴の見出し
+        type: string
+      - name: socialTitle
+        label: SNSの見出し
+        type: string
+      - name: skillIosTitle
+        label: スキル1：分野
+        type: string
+      - name: skillIos
+        label: スキル1：技術
+        type: text
+      - name: skillDataTitle
+        label: スキル2：分野
+        type: string
+      - name: skillData
+        label: スキル2：技術
+        type: text
+      - name: skillWebTitle
+        label: スキル3：分野
+        type: string
+      - name: skillWeb
+        label: スキル3：技術
+        type: text
